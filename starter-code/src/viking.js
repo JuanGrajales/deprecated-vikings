@@ -46,4 +46,10 @@ class Saxon extends Soldier {
 }
 
 // War
-class War {}
+class War {
+  addViking();
+  addSaxon();
+  vikingAttack();
+  saxonAttack();
+  showStatus();
+}
