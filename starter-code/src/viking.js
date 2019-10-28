@@ -55,8 +55,8 @@ class War {
     this.vikingArmy.push(Viking);
   }
 
-  addSaxon() {
-    this.saxonArmy.push(Viking);
+  addSaxon(Saxon) {
+    this.saxonArmy.push(Saxon);
   }
 
   vikingAttack() {
@@ -70,6 +70,6 @@ class War {
 
     return attackResult;
   }
-  saxonAttack()
-  showStatus()
+  // saxonAttack()
+  // showStatus()
 }
