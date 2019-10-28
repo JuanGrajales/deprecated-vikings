@@ -60,7 +60,15 @@ class War {
   }
 
   vikingAttack() {
+    let ranSaxon = this.saxonArmy[Math.floor(Math.random()*this.saxonArmy.length)];
+    let ranViking = this.vikingArmy[Math.floor(Math.random()*this.vikingArmy.length)];
+    let attackResult = ranSaxon.receiveDamage(ranViking.attack);
 
+    // if the saxon is dead remove it from the army
+    if(ranSaxon.health <= 0)
+    this.saxonArmy.splice(this.saxonArmy.indexOf(ranSaxon), 1);
+
+    return attackResult;
   }
   saxonAttack()
   showStatus()
